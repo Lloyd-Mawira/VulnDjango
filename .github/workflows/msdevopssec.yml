@@ -7,12 +7,15 @@ on:
   workflow_dispatch:
 
 jobs:
+  
   sample:
 
     name: Microsoft Security DevOps Analysis
 
     # MSDO runs on windows-latest and ubuntu-latest.
     # macos-latest supporting coming soon
+    permissions: write-all
+    
     runs-on: windows-latest
 
     steps:
